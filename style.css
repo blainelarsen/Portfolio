@@ -84,6 +84,9 @@ h1, h2, h3, h4, h5, h6, p, span {
   padding: 25px;
   border-radius: 10px 10px;
 }
+.footer-bg {
+  background-color: #28282b;
+}
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
