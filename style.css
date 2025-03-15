@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 .email-link {
   text-decoration: none;
   color: #5408ca;
+  font-weight: 600;
 }
 .email-link:hover {
   color: #5408ca;
