@@ -25,10 +25,7 @@ h1, h2, h3, h4, h5, h6, p, span {
     font-weight: 600;
     font-size: 50px;
     margin-top: 50px;
-  }
-.hero-description {
-    font-size: 24px;
-    padding-top: 10px;
+    display: inline-flex;
   }
 .hero-pfp {
   max-width: 100%;
@@ -37,17 +34,10 @@ h1, h2, h3, h4, h5, h6, p, span {
   animation: morph 12s ease-in-out infinite;
   transition: all 1s ease-in-out;
   }
-@keyframes morph {
-  0% {
-    border-radius: 50% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-
-  50% {
-    border-radius: 70% 60% 70% 40% / 50% 60% 30% 60%;
-  }  
-  100% {
-    border-radius: 90% 40% 30% 70% / 60% 30% 70% 40%;
-  }
+.dev-bubble {
+  padding: 10px;
+  border-radius: 5px 5px;
+  color: lightgrey;
 }
 .wave-emoji {
   max-height: 5rem;
@@ -128,6 +118,18 @@ h1, h2, h3, h4, h5, h6, p, span {
       opacity: 1;
       transform: none;
     }
+}
+@keyframes morph {
+  0% {
+    border-radius: 50% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 70% 60% 70% 40% / 50% 60% 30% 60%;
+  }  
+  100% {
+    border-radius: 90% 40% 30% 70% / 60% 30% 70% 40%;
+  }
 }
 .animated.fadeInUp {
   -webkit-animation-name: fadeInUp;
