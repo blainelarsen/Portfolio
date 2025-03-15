@@ -49,13 +49,9 @@ h1, h2, h3, h4, h5, h6, p, span {
     border-radius: 90% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
-.pin-emoji {
-  max-height: 25px;
-  padding-bottom: .3rem;
-}
 .wave-emoji {
   max-height: 5rem;
-  display: inline-flex;
+  padding-bottom: 1rem;
 }  
 .social-logos {
   max-height: 3rem;
