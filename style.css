@@ -23,8 +23,8 @@ h1, h2, h3, h4, h5, h6, p, span {
   }
 .hero-text {
     font-weight: 600;
-    font-size: 60px;
-    padding-top: 50px;
+    font-size: 50px;
+    margin-top: 50px;
   }
 .hero-description {
     font-size: 24px;
@@ -79,6 +79,11 @@ h1, h2, h3, h4, h5, h6, p, span {
   -moz-transform: scale(1.2);
   transition: .2s;
 }
+.card-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  letter-spacing: 0.1rem;
+}
 .project-card {
   background-color: #28282b;
   padding: 25px;
@@ -88,6 +93,14 @@ h1, h2, h3, h4, h5, h6, p, span {
   background-color: #28282b;
   padding: 25px;
   border-radius: 10px 10px;
+}
+.email-link {
+  text-decoration: none;
+  color: #5408ca;
+}
+.email-link:hover {
+  color: #5408ca;
+  text-decoration: underline;
 }
 .animated {
   -webkit-animation-duration: 1s;
