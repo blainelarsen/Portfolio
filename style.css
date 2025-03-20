@@ -34,10 +34,12 @@ h1, h2, h3, h4, h5, h6, p, span {
   animation: morph 12s ease-in-out infinite;
   transition: all 1s ease-in-out;
   }
-.dev-bubble {
-  padding: 10px;
-  border-radius: 5px 5px;
-  color: lightgrey;
+.info-bubble {
+  background-color: #28282b;
+  padding: 15px;
+  border-radius: 10px 10px;
+  display: inline-block;
+  margin: .2rem;
 }
 .wave-emoji {
   max-height: 5rem;
