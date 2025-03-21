@@ -124,6 +124,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   translate: scale(1.0);
   -webkit-transform: scale(1.0);
   -moz-transform: scale(1.0);
+  transform: scale(1.0);
   transition: .2s;
 }
 .card-heading {
