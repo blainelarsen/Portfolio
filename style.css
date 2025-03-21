@@ -36,28 +36,28 @@ h1, h2, h3, h4, h5, h6, p, span {
   }
 .info-bubble-home {
   background-color: #c4a157;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px 10px;
   display: inline-block;
   margin: .2rem;
 }
 .info-bubble-builder {
   background-color: #301968;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px 10px;
   display: inline-block;
   margin: .2rem;
 }
 .info-bubble-solver {
   background-color: #534429;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px 10px;
   display: inline-block;
   margin: .2rem;
 }
 .info-bubble-work {
   background-color: #537951;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px 10px;
   display: inline-block;
   margin: .2rem;
