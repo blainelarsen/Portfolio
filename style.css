@@ -161,11 +161,6 @@ h1, h2, h3, h4, h5, h6, p, span {
   0%, 100% { opacity: 0.2; }
   50% { opacity: 1; }
 }
-.footer-bg {
-  background-color: #28282b;
-  padding: 25px;
-  border-radius: 10px 10px;
-}
 .email-link {
   text-decoration: none;
   color: #5408ca;
