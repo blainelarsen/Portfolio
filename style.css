@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 .social-text:hover {
   text-decoration: none;
   color: #630ce7;
-  font-weight: 600;
+  font-weight: 400;
 }
 .social-logos {
   max-height: 2rem;
@@ -134,21 +134,21 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 .email-link {
   text-decoration: none;
-  color: #5408ca;
-  font-weight: 600;
+  color: white;
+  font-weight: 400;
 }
 .resume-link {
   text-decoration: none;
-  color: #5408ca;
-  font-weight: 600;
+  color: white;
+  font-weight: 400;
 }
 .email-link:hover {
   color: #5408ca;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .resume-link:hover {
   color: #5408ca;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .job-title {
   text-decoration: none;
