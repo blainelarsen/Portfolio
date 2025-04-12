@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, p, span {
     z-index: 100;
   }
 .navbar a {
-    font-weight: 600;
+    font-weight: 500;
   }
 .hero-text {
     font-weight: 600;
@@ -33,50 +33,6 @@ h1, h2, h3, h4, h5, h6, p, span {
   border: 3px solid white;
   animation: morph 12s ease-in-out infinite;
   transition: all 1s ease-in-out;
-  }
-.info-bubble-home {
-  background-color: #c4a157;
-  padding: 5px;
-  border-radius: 10px 10px;
-  display: inline-block;
-  margin: .2rem;
-}
-.info-bubble-builder {
-  background-color: #301968;
-  padding: 5px;
-  border-radius: 10px 10px;
-  display: inline-block;
-  margin: .2rem;
-}
-.info-bubble-solver {
-  background-color: #534429;
-  padding: 5px;
-  border-radius: 10px 10px;
-  display: inline-block;
-  margin: .2rem;
-}
-.info-bubble-work {
-  background-color: #537951;
-  padding: 5px;
-  border-radius: 10px 10px;
-  display: inline-block;
-  margin: .2rem;
-}
-.info-bubble-home:hover {
-  background-color: #dab669;
-  color: #fffbfb;
-}
-.info-bubble-builder:hover {
-  background-color: #381e79;
-  color: #fffbfb;
-}
-.info-bubble-solver:hover {
-  background-color: #635131;
-  color: #fffbfb;
-}
-.info-bubble-work:hover {
-  background-color: #5d8a5a;
-  color: #fffbfb;
 }
 .wave-emoji {
   max-height: 5rem;
