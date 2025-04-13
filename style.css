@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   transition: transform 0.2s ease-in-out;
   transition: .15s;
 }
-.tech-stack-card p{
+.tech-stack-card p {
   display: inline-block;
   justify-content: center;
   align-items: center;
