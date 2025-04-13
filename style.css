@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   transition: .15s;
 }
 .tech-stack-card p{
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
 }
