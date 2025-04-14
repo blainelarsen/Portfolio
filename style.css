@@ -104,8 +104,9 @@ h1, h2, h3, h4, h5, h6, p, span {
   letter-spacing: 0.1rem;
 }
 .project-card {
-  background-color: #28282b;
-  padding: 25px;
+  border: white 1px solid;
+  padding: 30px;
+  margin: 1rem;
   border-radius: 10px 10px;
 }
 .loader {
