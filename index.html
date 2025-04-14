@@ -30,28 +30,31 @@
     ></script>
   </head>
 
-  <body>
-    <nav
-      class="navbar sticky-top navbar-expand-md navbar-dark mb-5 p-3"
-      style="background-image: linear-gradient(to left, #1b1b1b, #28282b)"
+  <nav
+  class="navbar sticky-top navbar-expand-md navbar-dark mb-5 p-3"
+  style="background-image: linear-gradient(to left, #1b1b1b, #28282b)"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Blaine Larsen 👨🏼‍💻</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navtoggle"
+      aria-controls="navtoggle"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
     >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">Blaine Larsen 👨🏼‍💻</a>
-        <button
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#expandme"
-        >
-          <span class="navbar-toggler-icon"> </span>
-        </button>
-        <div class="collapse navbar-collapse" id="expandme">
-          <div class="navbar-nav">
-            <a href="#projects" class="nav-item nav-link">Projects</a>
-            <a href="#contact" class="nav-item nav-link">Contact</a>
-          </div>
-        </div>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navtoggle">
+      <div class="navbar-nav">
+        <a href="#projects" class="nav-item nav-link">Projects</a>
+        <a href="#contact" class="nav-item nav-link">Contact</a>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
 
     <div class="container">
       <div class="row">
