@@ -15,5 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.querySelectorAll('.to-animate').forEach(el => observer.observe(el));
-
 });
+
+console.log("What's up developer? Hire me!");
