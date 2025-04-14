@@ -208,3 +208,32 @@ h1, h2, h3, h4, h5, h6, p, span {
   opacity: 1;
   animation-name: fadeInUp;
 }
+
+@media (max-width: 768px) {
+  .tech-stack-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .tech-stack-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  .skill-imgs {
+    max-width: 60px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .tech-stack-card p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
