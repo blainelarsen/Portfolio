@@ -71,7 +71,6 @@ h1, h2, h3, h4, h5, h6, p, span {
   transition: .15s;
 }
 
-/* Tech stack wrapper and card styling */
 .tech-stack-wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -120,8 +119,8 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .project-card {
-  background-color: #28282b;
-  padding: 25px;
+  border: white 1px solid;
+  margin: 1rem;
   border-radius: 10px 10px;
 }
 
@@ -241,7 +240,6 @@ h1, h2, h3, h4, h5, h6, p, span {
   animation-name: fadeInUp;
 }
 
-/* Mobile responsive styles */
 @media screen and (max-width: 992px) {
   .tech-stack-wrapper {
     grid-template-columns: repeat(4, 1fr);
@@ -317,7 +315,6 @@ h1, h2, h3, h4, h5, h6, p, span {
   }
 }
 
-/* Fix for Bootstrap navbar toggler on mobile */
 @media (max-width: 767px) {
   .navbar-collapse {
     background-color: #28282b;
