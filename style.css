@@ -8,25 +8,30 @@ body {
   background: #1b1b1b !important;
   font-family: 'Poppins', 'Roboto', sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6, p, span {
     color: #fff;
 }
+
 .navbar {
     border-bottom: black 5px solid !important;
     align-items: center;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,11.1);
     z-index: 100;
-  }
+}
+
 .navbar a {
     font-weight: 500;
-  }
+}
+
 .hero-text {
     font-weight: 600;
     font-size: 50px;
     margin-top: 50px;
     display: inline-flex;
-  }
+}
+
 .hero-pfp {
   max-width: 100%;
   border-radius: 50%;
@@ -34,10 +39,12 @@ h1, h2, h3, h4, h5, h6, p, span {
   animation: morph 12s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
+
 .wave-emoji {
   max-height: 5rem;
   padding-bottom: 1rem;
 }
+
 .social-text {
   text-decoration: none;
   color: white;
@@ -45,79 +52,90 @@ h1, h2, h3, h4, h5, h6, p, span {
   font-family: Roboto;
   font-weight: 400;
 }
+
 .social-text:hover {
   text-decoration: none;
   color: #630ce7;
   font-weight: 400;
 }
+
 .social-logos {
   max-height: 2rem;
   padding: 1px;
 }
+
 .social-logos:hover {
   transform: translateY(-5px);
   -webkit-transform: translateY(-5px);
   transition: transform 0.2s ease-in-out;
   transition: .15s;
 }
-.skill-imgs {
-  display: flex;
-  display: inline-flex;
-  max-height: 50px;
-  margin: 2px;
+
+/* Tech stack wrapper and card styling */
+.tech-stack-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto;
 }
-.skill-imgs:hover {
-  transform: translateY(-5px);
-  -webkit-transform: translateY(-5px);
-  transition: transform 0.2s ease-in-out;
-  transition: .15s;
-}
-.tech-stack-card p {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-}
+
 .tech-stack-card {
   border: white 1px solid;
-  padding: 35px;
-  border-radius: 10px 10px;
-  display: inline-block;
-  justify-content: center;
+  border-radius: 10px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: .3rem;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
 }
+
 .tech-stack-card:hover {
   background-color: #28282b;
-  translate: scale(1.0);
-  -webkit-transform: scale(1.0);
-  -moz-transform: scale(1.0);
-  transform: scale(1.0);
-  transition: .2s;
   transform: translateY(-5px);
   -webkit-transform: translateY(-5px);
   transition: transform 0.2s ease-in-out;
   transition: .15s;
 }
+
+.skill-imgs {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.tech-stack-card p {
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+}
+
 .card-heading {
   font-family: 'Roboto', sans-serif;
   font-size: large;
   letter-spacing: 0.1rem;
 }
+
 .project-card {
-  border: white 1px solid;
-  padding: 30px;
-  margin: 1rem;
+  background-color: #28282b;
+  padding: 25px;
   border-radius: 10px 10px;
 }
+
 .loader {
   display: flex;
   align-items: center;
   gap: 6px;
 }
+
 .loader span {
-  color: #5408ca;;
+  color: #5408ca;
   font-weight: 600;
 }
+
 .dot {
   width: 5px;
   height: 5px;
@@ -125,6 +143,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   border-radius: 50%;
   animation: blink 1.5s infinite;
 }
+
 .dot:nth-child(1) { animation-delay: 0s; }
 .dot:nth-child(2) { animation-delay: 0.2s; }
 .dot:nth-child(3) { animation-delay: 0.4s; }
@@ -133,67 +152,77 @@ h1, h2, h3, h4, h5, h6, p, span {
   0%, 100% { opacity: 0.2; }
   50% { opacity: 1; }
 }
+
 .email-link {
   text-decoration: none;
   color: white;
   font-weight: 400;
 }
+
 .resume-link {
   text-decoration: none;
   color: white;
   font-weight: 400;
 }
+
 .email-link:hover {
   color: #5408ca;
   text-decoration: none;
 }
+
 .resume-link:hover {
   color: #5408ca;
   text-decoration: none;
 }
+
 .job-title {
   text-decoration: none;
   color: #5408ca;
   font-weight: 600;
 }
+
 .job-title:hover {
   color: #8b62ca;
 }
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
 .fade {
   opacity: 0;
   transition: opacity .15s linear;
 }
+
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
-    to {
-      opacity: 1;
-      transform: none;
-    }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
+
 @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translate3d(0, 100%, 0);
-    }
-    to {
-      opacity: 1;
-      transform: none;
-    }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
+
 @keyframes morph {
   0% {
     border-radius: 50% 40% 30% 70% / 60% 30% 70% 40%;
   }
-
   50% {
     border-radius: 70% 60% 70% 40% / 50% 60% 30% 60%;
   }  
@@ -201,11 +230,104 @@ h1, h2, h3, h4, h5, h6, p, span {
     border-radius: 90% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
+
 .animated.fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
+
 .visible.fadeInUp {
   opacity: 1;
   animation-name: fadeInUp;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 992px) {
+  .tech-stack-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .hero-text {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tech-stack-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .hero-text {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  
+  .wave-emoji {
+    max-height: 4rem;
+  }
+  
+  .social-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tech-stack-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .tech-stack-card {
+    padding: 10px 5px;
+  }
+  
+  .skill-imgs {
+    height: 35px;
+  }
+  
+  .hero-text {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  
+  .wave-emoji {
+    max-height: 3.5rem;
+  }
+  
+  .social-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tech-stack-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .skill-imgs {
+    height: 30px;
+  }
+  
+  .tech-stack-card p {
+    font-size: 12px;
+  }
+  
+  .hero-text {
+    font-size: 28px;
+  }
+}
+
+/* Fix for Bootstrap navbar toggler on mobile */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #28282b;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+  }
 }
