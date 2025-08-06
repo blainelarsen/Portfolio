@@ -131,8 +131,8 @@ h1, h2, h3, h4, h5, h6, p, span {
   background-color: #5408ca;
   color: #fff;
   border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
+  border-radius: 20px;
+  padding: 5px 15px;
   font-weight: 600;
   cursor: pointer;
   display: block;
@@ -153,6 +153,12 @@ h1, h2, h3, h4, h5, h6, p, span {
 .project-button a:hover {
   text-decoration: none;
   color: white;
+}
+
+.github-logo-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.2rem
 }
 
 .loader {
