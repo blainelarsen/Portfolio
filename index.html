@@ -228,25 +228,47 @@
     <div class="container py-5" id="certifications">
       <h2 class="card-heading py-2">CERTIFICATIONS</h2>
       <div class="row to-animate fade project-card">
-        <div class="col-md-12 pb-5">
+        <div class="col-md-4 pb-5">
           <h3 class="card-heading py-3">FRONTEND INTRODUCTION CERTIFICATION</h3>
-            <div>
-              <a href="" target="_blank">
-                <img class="certifications-img" src="imgs/introduction.webp" alt="Coursea Intro Into Development Certification" target="_blank" />
-              </a>
-            </div>
+          <div>
+            <img
+              class="certifications-img"
+              src="imgs/introduction.webp"
+              alt="Coursera Intro Into Development Certification"
+              onclick="openCertModal(this)"
+            />
+          </div>
         </div>
-      </div>
-      <div class="row to-animate fade project-card">
-        <div class="col-md-12 pb-5">
+        <div class="col-md-4 pb-5">
           <h3 class="card-heading py-3">HTML & CSS CERTIFICATION</h3>
-            <div>
-              <a href="" target="_blank">
-                <img class="certifications-img" src="imgs/html-css.webp" alt="Coursea HTML & CSS Certification" target="_blank" />
-              </a>
-            </div>
+          <div>
+            <img
+              class="certifications-img"
+              src="imgs/html-css.webp"
+              alt="Coursera HTML & CSS Certification"
+              onclick="openCertModal(this)"
+            />
+          </div>
+        </div>
+        <div class="col-md-4 pb-5">
+          <h3 class="card-heading py-3">CLAUDE CODE 101 CERTIFICATION</h3>
+          <div>
+            <img
+              class="certifications-img"
+              src="imgs/anthropic-cert.webp"
+              alt="Anthropic Certification"
+              onclick="openCertModal(this)"
+            />
+          </div>
         </div>
       </div>
+    </div>
+
+      <div id="certModal" class="cert-modal" onclick="closeCertModal()">
+        <span class="cert-modal-close">&times;</span>
+        <img class="cert-modal-content" id="certModalImg" alt="" />
+      </div>
+    </div>
 
     <div class="container py-5" id="projects">
       <h2 class="card-heading py-2">PROJECTS</h2>
