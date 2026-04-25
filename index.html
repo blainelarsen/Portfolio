@@ -11,7 +11,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="/imgs/porticon.png" />
+    <link rel="shortcut icon" href="imgs/porticon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,37 +23,41 @@
       rel="stylesheet"
     />
     <script
+      src="https://kit.fontawesome.com/02941e2ae5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
   </head>
-
-  <nav
-  class="navbar sticky-top navbar-expand-md navbar-dark mb-5 p-3"
-  style="background-image: linear-gradient(to left, #1b1b1b, #28282b)"
-  >
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">Blaine Larsen 👨🏼‍💻</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navtoggle"
-      aria-controls="navtoggle"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+  <body>
+    <nav
+      class="navbar sticky-top navbar-expand-md navbar-dark mb-5 p-3"
+      style="background-image: linear-gradient(to left, #1b1b1b, #28282b)"
     >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navtoggle">
-      <div class="navbar-nav">
-        <a href="#projects" class="nav-item nav-link">Projects</a>
-        <a href="#contact" class="nav-item nav-link">Contact</a>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Blaine Larsen 👨🏼‍💻</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navtoggle"
+          aria-controls="navtoggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navtoggle">
+          <div class="navbar-nav">
+            <a href="#projects" class="nav-item nav-link">Projects</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>
 
     <div class="container">
       <div class="row">
@@ -69,7 +73,7 @@
         </div>
         <div class="col-md-8 to-animate fade">
           <h1 class="hero-text">Hey, I'm Blaine.</h1>
-          <img class="wave-emoji" src="/imgs/wave.png" alt="Wave Emoji" />
+          <img class="wave-emoji" src="imgs/wave.png" alt="Wave Emoji" />
           <div class="mt-1 d-flex">
             <a class="social-text px-2">
               <i class="fa-solid fa-location-dot"></i>
@@ -79,7 +83,7 @@
               <i class="fa-brands fa-github"></i>
               GitHub
             </a>
-            <a
+            
               href="https://www.linkedin.com/in/blaine-larsen/"
               class="social-text px-2"
             >
@@ -151,7 +155,7 @@
               <p>HTML</p>
             </div>
             <div class="tech-stack-card text-center">
-              <img class="skill-imgs" src="/imgs/css-logo.png" alt="CSS Logo" />
+              <img class="skill-imgs" src="imgs/css-logo.png" alt="CSS Logo" />
               <p>CSS</p>
             </div>
             <div class="tech-stack-card text-center">
@@ -226,9 +230,9 @@
     </div>
 
     <div class="container py-5" id="certifications">
-      <h2 class="card-heading py-2">CERTIFICATIONS</h2>
+      <h2 class="card-heading py-2">DEVELOPMENT CERTIFICATIONS</h2>
       <div class="row to-animate fade project-card">
-        <div class="col-md-4 pb-5">
+        <div class="col-md-6 pb-5">
           <h3 class="card-heading py-3">FRONTEND INTRODUCTION CERTIFICATION</h3>
           <div>
             <img
@@ -239,7 +243,7 @@
             />
           </div>
         </div>
-        <div class="col-md-4 pb-5">
+        <div class="col-md-6 pb-5">
           <h3 class="card-heading py-3">HTML & CSS CERTIFICATION</h3>
           <div>
             <img
@@ -250,19 +254,47 @@
             />
           </div>
         </div>
-        <div class="col-md-4 pb-5">
+      </div>
+
+      <h2 class="card-heading py-2 pt-5">CLAUDE CERTIFICATIONS</h2>
+      <div class="row to-animate fade project-card">
+        <div class="col-md-6 pb-5">
           <h3 class="card-heading py-3">CLAUDE CODE 101 CERTIFICATION</h3>
           <div>
             <img
               class="certifications-img"
-              src="imgs/anthropic-cert.webp"
-              alt="Anthropic Certification"
+              src="imgs/anthropic-cert-claude-101.webp"
+              alt="Anthropic Claude 101 Certification"
               onclick="openCertModal(this)"
             />
           </div>
+          <div class="project-buttons py-2">
+            <div class="project-button">
+              <a href="https://verify.skilljar.com/c/fbuvfpt9v55x" target="_blank" rel="noopener">
+                Verify Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 pb-5">
+          <h3 class="card-heading py-3">CLAUDE 101 CERTIFICATION</h3>
+          <div>
+            <img
+              class="certifications-img"
+              src="imgs/anthropic-cert-claude-code-101.webp"
+              alt="Anthropic Claude 101 Certification"
+              onclick="openCertModal(this)"
+            />
+          </div>
+          <div class="project-buttons py-2">
+            <div class="project-button">
+              <a href="https://verify.skilljar.com/c/iq4oasmggr9y" target="_blank" rel="noopener">
+                Verify Certificate
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
       <div id="certModal" class="cert-modal" onclick="closeCertModal()">
         <span class="cert-modal-close">&times;</span>
@@ -275,20 +307,22 @@
       <div class="row to-animate fade project-card">
         <div class="col-md-12 pb-5">
           <h3 class="card-heading py-3">QR CODE GENERATOR</h3>
-            <div>
-              <a href="https://easypassgen.netlify.app/" target="_blank">
-                <img class="project-img" src="imgs/qr-code-project.webp" alt="QR Code Generator" target="_blank" />
-              </a>
-              <br>
-              <div class="project-buttons">
-                <button class="project-button">
-                  <img src="imgs/github-logo-btn.png" class="github-logo-img"></img><a href="" target="_blank">Live Demo</a>
-                </button>
-                <button class="project-button">
-                  <img src="imgs/github-logo-btn.png" class="github-logo-img"></img><a href="" target="_blank">Source Code</a>
-                </button>
-              </div>
+          <div>
+            <a href="https://easypassgen.netlify.app/" target="_blank">
+              <img class="project-img" src="imgs/qr-code-project.webp" alt="QR Code Generator" />
+            </a>
+            <br>
+            <div class="project-buttons">
+              <button class="project-button">
+                <img src="imgs/github-logo-btn.png" class="github-logo-img" alt="GitHub Logo" />
+                <a href="" target="_blank">Live Demo</a>
+              </button>
+              <button class="project-button">
+                <img src="imgs/github-logo-btn.png" class="github-logo-img" alt="GitHub Logo" />
+                <a href="" target="_blank">Source Code</a>
+              </button>
             </div>
+          </div>
         </div>
       </div>
       <div class="row to-animate fade project-card">
@@ -331,24 +365,26 @@
         <div id="contact" class="col-md-12">
           <hr style="color: white" />
           <h6 class="card-heading py-2">GET IN TOUCH</h6>
-          <a href="mailto:blaine.larsen17@gmail.com" class="email-link px-1"
-            ><i class="fa-solid fa-envelope"></i> Email Me</a
-          >
-          <a
+          <a href="mailto:blaine.larsen17@gmail.com" class="email-link px-1">
+            <i class="fa-solid fa-envelope"></i> Email Me
+          </a>
+          
             href="https://drive.google.com/file/d/1W6Ciir1dq5asyWpPo2fr0XFKcvPhJyWe/view?usp=sharing"
             class="resume-link px-1"
             target="_blank"
-            ><i class="fa-solid fa-file"></i> See My Resume</a
           >
+            <i class="fa-solid fa-file"></i> See My Resume
+          </a>
         </div>
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script
-      src="https://kit.fontawesome.com/02941e2ae5.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
