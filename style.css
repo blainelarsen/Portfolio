@@ -470,6 +470,14 @@ h1, h2, h3, h4, h5, h6, p, span {
 .dot:nth-child(2) { animation-delay: 0.2s; }
 .dot:nth-child(3) { animation-delay: 0.4s; }
 
+.no-save {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  pointer-events: auto; 
+}
+
 @keyframes blink {
   0%, 100% { opacity: 0.2; }
   50% { opacity: 1; }
@@ -499,7 +507,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .job-title {
   text-decoration: none;
-  color: #5408ca;
+  color: #b8a7d1;
   font-weight: 600;
 }
 

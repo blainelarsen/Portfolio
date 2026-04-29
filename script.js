@@ -36,4 +36,8 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeCertModal();
 });
 
+document.addEventListener('contextmenu', (e) => {
+  if (e.target.tagName === 'IMG') e.preventDefault();
+});
+
 console.log("What's up developer? Hire me!");
