@@ -155,22 +155,252 @@ h1, h2, h3, h4, h5, h6, p, span {
   color: white;
 }
 
-.certifications-img {
+/* Tech Badge (shared by website + cert cards) */
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(84, 8, 202, 0.12);
+  border: 1px solid rgba(84, 8, 202, 0.4);
+  border-radius: 999px;
+  padding: 4px 10px;
+  color: #b8a3ff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.tech-badge span {
+  color: #b8a3ff;
+}
+
+.tech-badge-img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+/* Website Cards */
+.website-card {
+  background: linear-gradient(145deg, #1f1f23 0%, #161618 100%);
+  border: 1px solid #2a2a30;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.website-card:hover {
+  transform: translateY(-4px);
+  border-color: #5408ca;
+  box-shadow: 0 12px 32px rgba(84, 8, 202, 0.25);
+}
+
+.website-card-img-link {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: #0f0f10;
+}
+
+.website-card-img {
   width: 100%;
-  height: auto;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
 }
 
-.certifications-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+.website-card:hover .website-card-img {
+  transform: scale(1.04);
 }
 
+.website-card-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: repeating-linear-gradient(
+    45deg,
+    #161618,
+    #161618 10px,
+    #1a1a1d 10px,
+    #1a1a1d 20px
+  );
+}
+
+.website-card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-grow: 1;
+}
+
+.website-card-title {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.website-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.website-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 0;
+  transition: color 0.2s ease;
+}
+
+.website-card-btn:hover {
+  color: #b8a3ff;
+  text-decoration: none;
+}
+
+.website-card-btn .arrow {
+  transition: transform 0.2s ease;
+}
+
+.website-card-btn:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Certification Cards */
+.cert-card {
+  background: linear-gradient(145deg, #1f1f23 0%, #161618 100%);
+  border: 1px solid #2a2a30;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  border-color: #5408ca;
+  box-shadow: 0 12px 32px rgba(84, 8, 202, 0.25);
+}
+
+.cert-card-img-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: #0f0f10;
+  cursor: zoom-in;
+}
+
+.cert-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.cert-card:hover .cert-card-img {
+  transform: scale(1.04);
+}
+
+.cert-card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 15, 16, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.cert-card-overlay span {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.cert-card:hover .cert-card-overlay {
+  opacity: 1;
+}
+
+.cert-card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-grow: 1;
+}
+
+.cert-card-title {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.cert-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.cert-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 0;
+  transition: color 0.2s ease;
+}
+
+.cert-card-btn:hover {
+  color: #b8a3ff;
+  text-decoration: none;
+}
+
+.cert-card-btn .arrow {
+  transition: transform 0.2s ease;
+}
+
+.cert-card-btn:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Cert Modal (lightbox) */
 .cert-modal {
   display: none;
   position: fixed;
@@ -317,7 +547,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   }
   50% {
     border-radius: 70% 60% 70% 40% / 50% 60% 30% 60%;
-  }  
+  }
   100% {
     border-radius: 90% 40% 30% 70% / 60% 30% 70% 40%;
   }
@@ -342,7 +572,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   .tech-stack-wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
   .hero-text {
     font-size: 45px;
   }
@@ -352,16 +582,16 @@ h1, h2, h3, h4, h5, h6, p, span {
   .tech-stack-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .hero-text {
     font-size: 40px;
     margin-top: 30px;
   }
-  
+
   .wave-emoji {
     max-height: 4rem;
   }
-  
+
   .social-text {
     font-size: 1.1rem;
   }
@@ -371,24 +601,24 @@ h1, h2, h3, h4, h5, h6, p, span {
   .tech-stack-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .tech-stack-card {
     padding: 10px 5px;
   }
-  
+
   .skill-imgs {
     height: 35px;
   }
-  
+
   .hero-text {
     font-size: 32px;
     margin-top: 20px;
   }
-  
+
   .wave-emoji {
     max-height: 3.5rem;
   }
-  
+
   .social-text {
     font-size: 1rem;
   }
@@ -399,15 +629,15 @@ h1, h2, h3, h4, h5, h6, p, span {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
-  
+
   .skill-imgs {
     height: 30px;
   }
-  
+
   .tech-stack-card p {
     font-size: 12px;
   }
-  
+
   .hero-text {
     font-size: 28px;
   }
@@ -420,7 +650,7 @@ h1, h2, h3, h4, h5, h6, p, span {
     border-radius: 5px;
     margin-top: 10px;
   }
-  
+
   .navbar-toggler {
     padding: 0.25rem 0.5rem;
     font-size: 1rem;

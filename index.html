@@ -214,68 +214,116 @@
 
     <div class="container py-5" id="certifications">
       <h2 class="card-heading py-2">DEVELOPMENT CERTIFICATIONS</h2>
-      <div class="row to-animate fade project-card">
-        <div class="col-md-6 pb-5">
-          <h3 class="card-heading py-3">FRONTEND INTRODUCTION CERTIFICATION</h3>
-          <div>
-            <img
-              class="certifications-img"
-              src="imgs/introduction.webp"
-              alt="Coursera Intro Into Development Certification"
-              onclick="openCertModal(this)" />
+
+      <div class="row to-animate fade">
+        <div class="col-md-6 pb-4">
+          <div class="cert-card">
+            <div
+              class="cert-card-img-link"
+              onclick="openCertModal(this.querySelector('img'))">
+              <img
+                class="cert-card-img"
+                src="imgs/introduction.webp"
+                alt="Coursera Intro Into Development Certification" />
+              <div class="cert-card-overlay">
+                <span>Click to expand</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <h3 class="cert-card-title">Frontend Introduction</h3>
+              <div class="cert-card-footer">
+                <div class="tech-badge">
+                  <span>Coursera</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 pb-5">
-          <h3 class="card-heading py-3">HTML & CSS CERTIFICATION</h3>
-          <div>
-            <img
-              class="certifications-img"
-              src="imgs/html-css.webp"
-              alt="Coursera HTML & CSS Certification"
-              onclick="openCertModal(this)" />
+        <div class="col-md-6 pb-4">
+          <div class="cert-card">
+            <div
+              class="cert-card-img-link"
+              onclick="openCertModal(this.querySelector('img'))">
+              <img
+                class="cert-card-img"
+                src="imgs/html-css.webp"
+                alt="Coursera HTML & CSS Certification" />
+              <div class="cert-card-overlay">
+                <span>Click to expand</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <h3 class="cert-card-title">HTML &amp; CSS</h3>
+              <div class="cert-card-footer">
+                <div class="tech-badge">
+                  <span>Coursera</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <h2 class="card-heading py-2 pt-5">CLAUDE CERTIFICATIONS</h2>
-      <div class="row to-animate fade project-card">
-        <div class="col-md-6 pb-5">
-          <h3 class="card-heading py-3">CLAUDE CODE 101 CERTIFICATION</h3>
-          <div>
-            <img
-              class="certifications-img"
-              src="imgs/anthropic-cert-claude-101.webp"
-              alt="Anthropic Claude 101 Certification"
-              onclick="openCertModal(this)" />
-          </div>
-          <div class="project-buttons py-2">
-            <div class="project-button">
-              <a
-                href="https://verify.skilljar.com/c/fbuvfpt9v55x"
-                target="_blank"
-                rel="noopener">
-                Verify Certificate
-              </a>
+
+      <div class="row to-animate fade">
+        <div class="col-md-6 pb-4">
+          <div class="cert-card">
+            <div
+              class="cert-card-img-link"
+              onclick="openCertModal(this.querySelector('img'))">
+              <img
+                class="cert-card-img"
+                src="imgs/anthropic-cert-claude-101.webp"
+                alt="Anthropic Claude 101 Certification" />
+              <div class="cert-card-overlay">
+                <span>Click to expand</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <h3 class="cert-card-title">Claude Code 101</h3>
+              <div class="cert-card-footer">
+                <div class="tech-badge">
+                  <span>Anthropic</span>
+                </div>
+                <a
+                  href="https://verify.skilljar.com/c/fbuvfpt9v55x"
+                  target="_blank"
+                  rel="noopener"
+                  class="cert-card-btn">
+                  Verify <span class="arrow">→</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 pb-5">
-          <h3 class="card-heading py-3">CLAUDE 101 CERTIFICATION</h3>
-          <div>
-            <img
-              class="certifications-img"
-              src="imgs/anthropic-cert-claude-code-101.webp"
-              alt="Anthropic Claude 101 Certification"
-              onclick="openCertModal(this)" />
-          </div>
-          <div class="project-buttons py-2">
-            <div class="project-button">
-              <a
-                href="https://verify.skilljar.com/c/iq4oasmggr9y"
-                target="_blank"
-                rel="noopener">
-                Verify Certificate
-              </a>
+        <div class="col-md-6 pb-4">
+          <div class="cert-card">
+            <div
+              class="cert-card-img-link"
+              onclick="openCertModal(this.querySelector('img'))">
+              <img
+                class="cert-card-img"
+                src="imgs/anthropic-cert-claude-code-101.webp"
+                alt="Anthropic Claude 101 Certification" />
+              <div class="cert-card-overlay">
+                <span>Click to expand</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <h3 class="cert-card-title">Claude 101</h3>
+              <div class="cert-card-footer">
+                <div class="tech-badge">
+                  <span>Anthropic</span>
+                </div>
+                <a
+                  href="https://verify.skilljar.com/c/iq4oasmggr9y"
+                  target="_blank"
+                  rel="noopener"
+                  class="cert-card-btn">
+                  Verify <span class="arrow">→</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -287,68 +335,274 @@
       </div>
     </div>
 
-    <div class="container py-5" id="projects">
-      <h2 class="card-heading py-2">PROJECTS</h2>
-      <div class="row to-animate fade project-card">
-        <div class="col-md-12 pb-5">
-          <h3 class="card-heading py-3">QR CODE GENERATOR</h3>
-          <div>
-            <a href="https://easypassgen.netlify.app/" target="_blank">
+    <div class="container py-5" id="websites">
+      <h2 class="card-heading py-2">WEBSITES BUILT</h2>
+
+      <div class="row to-animate fade">
+        <div class="col-md-6 pb-4">
+          <div class="website-card">
+            <a
+              href="https://woodfilms.org"
+              target="_blank"
+              rel="noopener"
+              class="website-card-img-link">
               <img
-                class="project-img"
-                src="imgs/qr-code-project.webp"
-                alt="QR Code Generator" />
+                class="website-card-img"
+                src="imgs/wood-films-co.webp"
+                alt="Wood Films Website" />
             </a>
-            <br />
-            <div class="project-buttons">
-              <button class="project-button">
-                <img
-                  src="imgs/github-logo-btn.png"
-                  class="github-logo-img"
-                  alt="GitHub Logo" />
-                <a href="" target="_blank">Live Demo</a>
-              </button>
-              <button class="project-button">
-                <img
-                  src="imgs/github-logo-btn.png"
-                  class="github-logo-img"
-                  alt="GitHub Logo" />
-                <a href="" target="_blank">Source Code</a>
-              </button>
+            <div class="website-card-body">
+              <h3 class="website-card-title">Wood Films</h3>
+              <div class="website-card-footer">
+                <div class="tech-badge">
+                  <img
+                    src="imgs/Webflow-Logo.svg"
+                    alt="Webflow"
+                    class="tech-badge-img" />
+                  <span>Webflow</span>
+                </div>
+                <a
+                  href="https://woodfilms.org"
+                  target="_blank"
+                  rel="noopener"
+                  class="website-card-btn">
+                  Visit Site <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 pb-4">
+          <div class="website-card">
+            <a
+              href="https://theroofhunter.com"
+              target="_blank"
+              rel="noopener"
+              class="website-card-img-link">
+              <img
+                class="website-card-img"
+                src="imgs/the-roof-hunter.webp"
+                alt="The Roof Hunter Website" />
+            </a>
+            <div class="website-card-body">
+              <h3 class="website-card-title">The Roof Hunter</h3>
+              <div class="website-card-footer">
+                <div class="tech-badge">
+                  <img
+                    src="imgs/Webflow-Logo.svg"
+                    alt="Webflow"
+                    class="tech-badge-img" />
+                  <span>Webflow</span>
+                </div>
+                <a
+                  href="https://theroofhunter.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="website-card-btn">
+                  Visit Site <span class="arrow">→</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row to-animate fade project-card">
-        <div class="col-md-12 pb-5">
-          <h3 class="card-heading py-3">CRYPTO WEBSITE</h3>
-          <div class="loader">
-            <span>In Development</span>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+
+      <div class="row to-animate fade">
+        <div class="col-md-6 pb-4">
+          <div class="website-card">
+            <a
+              href="https://www.odinandsonsconstruction.com"
+              target="_blank"
+              rel="noopener"
+              class="website-card-img-link">
+              <img
+                class="website-card-img"
+                src="imgs/odin-and-sons-construction.webp"
+                alt="Odin and Sons Construction Website" />
+            </a>
+            <div class="website-card-body">
+              <h3 class="website-card-title">Odin and Sons Construction</h3>
+              <div class="website-card-footer">
+                <div class="tech-badge">
+                  <img
+                    src="imgs/Webflow-Logo.svg"
+                    alt="Webflow"
+                    class="tech-badge-img" />
+                  <span>Webflow</span>
+                </div>
+                <a
+                  href="https://www.odinandsonsconstruction.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="website-card-btn">
+                  Visit Site <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 pb-4">
+          <div class="website-card">
+            <a
+              href="https://www.maverickwindowcleaning.com"
+              target="_blank"
+              rel="noopener"
+              class="website-card-img-link">
+              <img
+                class="website-card-img"
+                src="imgs/maverick-window-cleaning.webp"
+                alt="Maverick Window Cleaning Website" />
+            </a>
+            <div class="website-card-body">
+              <h3 class="website-card-title">Maverick Window Cleaning</h3>
+              <div class="website-card-footer">
+                <div class="tech-badge">
+                  <img
+                    src="imgs/Webflow-Logo.svg"
+                    alt="Webflow"
+                    class="tech-badge-img" />
+                  <span>Webflow</span>
+                </div>
+                <a
+                  href="https://www.maverickwindowcleaning.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="website-card-btn">
+                  Visit Site <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row to-animate fade project-card">
-        <div class="col-md-12 pb-5">
-          <h3 class="card-heading py-3">NFL API APP</h3>
-          <div class="loader">
-            <span>In Development</span>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+
+      <div class="row to-animate fade">
+        <div class="col-md-6 pb-4">
+          <div class="website-card">
+            <a
+              href="https://www.propanelllc.com"
+              target="_blank"
+              rel="noopener"
+              class="website-card-img-link">
+              <img
+                class="website-card-img"
+                src="imgs/pro-panel-llc.webp"
+                alt="Pro Panel LLC Website" />
+            </a>
+            <div class="website-card-body">
+              <h3 class="website-card-title">Pro Panel LLC</h3>
+              <div class="website-card-footer">
+                <div class="tech-badge">
+                  <img
+                    src="imgs/Webflow-Logo.svg"
+                    alt="Webflow"
+                    class="tech-badge-img" />
+                  <span>Webflow</span>
+                </div>
+                <a
+                  href="https://www.propanelllc.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="website-card-btn">
+                  Visit Site <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 pb-4">
+          <div class="website-card">
+            <a
+              href="https://shop.officialtimewatch.com"
+              target="_blank"
+              rel="noopener"
+              class="website-card-img-link">
+              <img
+                class="website-card-img"
+                src="imgs/official-time-watch.webp"
+                alt="Official Time Watch Website" />
+            </a>
+            <div class="website-card-body">
+              <h3 class="website-card-title">Official Time Watch</h3>
+              <div class="website-card-footer">
+                <div class="tech-badge">
+                  <img
+                    src="imgs/shopify-logo.png"
+                    alt="Shopify"
+                    class="tech-badge-img" />
+                  <span>Shopify</span>
+                </div>
+                <a
+                  href="https://shop.officialtimewatch.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="website-card-btn">
+                  Visit Site <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row to-animate fade project-card">
-        <div class="col-md-12 pb-5">
-          <h3 class="card-heading py-3">WORDPRESS THEME</h3>
-          <div class="loader">
-            <span>In Development</span>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+
+      <div class="row to-animate fade">
+        <div class="col-md-6 pb-4">
+          <div class="website-card">
+            <a
+              href="https://balancedskinco.com"
+              target="_blank"
+              rel="noopener"
+              class="website-card-img-link">
+              <img
+                class="website-card-img"
+                src="imgs/balanced-skin-co.webp"
+                alt="Balanced Skin Co Website" />
+            </a>
+            <div class="website-card-body">
+              <h3 class="website-card-title">Balanced Skin Co</h3>
+              <div class="website-card-footer">
+                <div class="tech-badge">
+                  <img
+                    src="imgs/framer-logo.png"
+                    alt="Framer"
+                    class="tech-badge-img" />
+                  <span>Framer</span>
+                </div>
+                <a
+                  href="https://balancedskinco.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="website-card-btn">
+                  Visit Site <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 pb-4">
+          <div class="website-card">
+            <div class="website-card-img-link website-card-placeholder">
+              <span>Coming Soon</span>
+            </div>
+            <div class="website-card-body">
+              <h3 class="website-card-title">Level Up Lights UT</h3>
+              <div class="website-card-footer">
+                <div class="tech-badge">
+                  <img
+                    src="imgs/wordpress-logo.png"
+                    alt="WordPress"
+                    class="tech-badge-img" />
+                  <span>WordPress</span>
+                </div>
+                <a
+                  href="https://www.leveluplightsut.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="website-card-btn">
+                  Visit Site <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
