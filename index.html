@@ -14,10 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/02941e2ae5.js"
@@ -32,7 +29,7 @@
       class="navbar navbar-expand-md navbar-dark mb-5 p-3"
       style="background-image: linear-gradient(to left, #1b1b1b, #28282b)">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/"></a>
+        <a class="navbar-brand" href="/">Blaine Larsen 👨🏼‍💻</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -52,41 +49,74 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 to-animate fade">
-          <img
-            nosave
-            class="hero-pfp no-save"
-            src="imgs/profile-pic.jpg"
-            alt="Profile Picture" />
+    <div class="container hero-container">
+      <div class="row align-items-center">
+        <div class="col-md-4 to-animate fade text-center text-md-start">
+          <div class="hero-pfp-wrapper">
+            <img
+              class="hero-pfp no-save"
+              src="imgs/profile-pic.jpg"
+              draggable="false"
+              oncontextmenu="return false;"
+              alt="Profile Picture" />
+            <div class="hero-pfp-glow"></div>
+          </div>
         </div>
         <div class="col-md-8 to-animate fade">
-          <h1 class="hero-text">Hey, I'm Blaine.</h1>
-          <img class="wave-emoji" src="imgs/wave.png" alt="Wave Emoji" />
-          <div class="mt-1 d-flex">
-            <a class="social-text px-2">
-              <i class="fa-solid fa-location-dot"></i>
-              Utah
+          <div class="hero-status">
+            <span class="hero-status-dot"></span>
+            <span>Available for freelance</span>
+          </div>
+          <h1 class="hero-text">
+            Hey, I'm Blaine.
+            <img class="wave-emoji" src="imgs/wave.png" alt="Wave Emoji" />
+          </h1>
+          <p class="hero-role">Web Developer &amp; UI Engineer</p>
+          <p class="hero-tagline">
+            I build fast, clean websites for marketing agencies and small
+            businesses across Utah and beyond.
+          </p>
+
+          <div class="hero-tech-stack">
+            <span class="hero-tech-label">Currently working with</span>
+            <div class="hero-tech-icons">
+              <img src="imgs/html-logo.png" alt="HTML" title="HTML" />
+              <img src="imgs/css-logo.png" alt="CSS" title="CSS" />
+              <img
+                src="imgs/javascript-logo.png"
+                alt="JavaScript"
+                title="JavaScript" />
+              <img src="imgs/Webflow-Logo.svg" alt="Webflow" title="Webflow" />
+              <img
+                src="imgs/wordpress-logo.png"
+                alt="WordPress"
+                title="WordPress" />
+            </div>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="#websites" class="hero-cta hero-cta-primary">
+              View My Work <span class="arrow">→</span>
             </a>
-            <a href="https://github.com/blainelarsen" class="social-text px-2">
-              <i class="fa-brands fa-github"></i>
-              GitHub
+            <a href="#contact" class="hero-cta hero-cta-secondary">
+              Get In Touch <span class="arrow">→</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a class="social-text">
+              <i class="fa-solid fa-location-dot"></i> Utah
+            </a>
+            <a href="https://github.com/blainelarsen" class="social-text">
+              <i class="fa-brands fa-github"></i> GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/blaine-larsen/"
-              class="social-text px-2">
-              <i class="fa-brands fa-linkedin"></i>
-              LinkedIn
+              class="social-text">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
             </a>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container my-1 py-1">
-      <div class="row to-animate fade">
-        <div class="col-md-12"></div>
       </div>
     </div>
 
@@ -99,9 +129,7 @@
               <strong>2022 - Present</strong> |
               <span class="job-title">Web Developer</span>
             </p>
-            <p>
-              <em>Socius Marketing</em>
-            </p>
+            <p><em>Socius Marketing</em></p>
             <p>
               - Developed and maintained responsive web applications using HTML,
               CSS, JavaScript, and Bootstrap.<br />
@@ -116,9 +144,7 @@
               <strong>2020 - 2022</strong> |
               <span class="job-title">Junior Web Developer</span>
             </p>
-            <p>
-              <em>Full Steam</em>
-            </p>
+            <p><em>Full Steam</em></p>
             <p>
               - Assisted in designing and implementing user-friendly
               websites.<br />
@@ -165,11 +191,8 @@
               <p>JavaScript</p>
             </div>
           </div>
-          </div>
         </div>
 
-        <div class="container py-5">
-        <div class="row to-animate fade">
         <div class="col-12 py-5">
           <h2 class="card-heading py-2">TECHNOLOGIES USED</h2>
           <div class="tech-stack-wrapper">
@@ -207,8 +230,6 @@
                 src="imgs/netlify-logo.png"
                 alt="Netlify Logo" />
               <p>Netlify</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
