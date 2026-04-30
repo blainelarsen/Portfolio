@@ -5,6 +5,16 @@
   scrollbar-width: thin;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.hero-pfp-wrapper {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
 body {
   background:
     radial-gradient(ellipse 80% 60% at 20% 0%, rgba(84, 8, 202, 0.15), transparent 60%),
